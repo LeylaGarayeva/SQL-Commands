@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+  <script type="text/javascript">
+  			var n = 180;
+			var valyuta = [500,200,100,50,20,10];
+			var total=0;
+			if (n % 10) {
+					document.write("-1");
+			} else {
+			  for (var i=0;i< 6 && n > 0;i++){
+			    if(n >= valyuta[i]){
+			      c = Math.floor(n / valyuta[i]);
+			      n = n - c*valyuta[i];
+			      total += c;
+			    }
+			  }
+			 document.write(total);
+			}
+  </script>
+</body>
+</html>
+
+
